@@ -192,11 +192,17 @@ function PlayerHome(_a) {
         homeY_coord: (height * 1 / 3) / 2,
         homeWidth: width * 2 / 3,
         homeHeight: height * 2 / 3,
-        playersHomeAreaWidth: (width * 2 / 3) * 3 / 8,
-        playersHomeAreaHeight: (height * 2 / 3) * 3 / 8
+        playersHomeAreaWidth: (width * 2 / 3) * 5 / 16,
+        playersHomeAreaHeight: (height * 2 / 3) * 5 / 16
+    };
+    var PASA = {
+        x_coord: x_coord + PLAYER_MAIN_AREA.playersHomeAreaWidth + PLAYER_MAIN_AREA.homeX_coord,
+        y_coord: y_coord + PLAYER_MAIN_AREA.playersHomeAreaHeight + PLAYER_MAIN_AREA.homeY_coord,
+        width: PLAYER_MAIN_AREA.homeWidth - 2 * PLAYER_MAIN_AREA.playersHomeAreaWidth,
+        height: PLAYER_MAIN_AREA.homeHeight - 2 * PLAYER_MAIN_AREA.playersHomeAreaHeight
     };
     react_1.useEffect(function () {
-        var _a, _b;
+        var _a, _b, _c;
         // drawing players main area in home
         var homeHTML = document.createElement("div");
         homeHTML.setAttribute("id", "home_" + playerHomeID);
@@ -227,8 +233,29 @@ function PlayerHome(_a) {
                 // console.log(playerHomeHTML)
                 (_b = document.getElementById("home_" + playerHomeID)) === null || _b === void 0 ? void 0 : _b.appendChild(playerHomeHTML);
                 playerNo++;
+                ctx.beginPath();
+                ctx.rect(x_coord + PLAYER_MAIN_AREA.homeX_coord + row * (PLAYER_MAIN_AREA.homeWidth - PLAYER_MAIN_AREA.playersHomeAreaWidth), y_coord + PLAYER_MAIN_AREA.homeY_coord + col * (PLAYER_MAIN_AREA.homeHeight - PLAYER_MAIN_AREA.playersHomeAreaHeight), PLAYER_MAIN_AREA.playersHomeAreaWidth, PLAYER_MAIN_AREA.playersHomeAreaHeight);
+                ctx.strokeStyle = "rgba(0, 0, 0, 0.8)";
+                ctx.stroke();
+                ctx.closePath();
             }
         }
+        // drawing pasa
+        var pasaHTML = document.createElement("div");
+        pasaHTML.setAttribute("id", "pasa_" + playerHomeID);
+        pasaHTML.style.width = PASA.width + "px";
+        pasaHTML.style.height = PASA.height + "px";
+        pasaHTML.style.position = "absolute";
+        pasaHTML.style.paddingLeft = PLAYER_MAIN_AREA.homeX_coord + PLAYER_MAIN_AREA.playersHomeAreaWidth + "px";
+        pasaHTML.style.paddingTop = PLAYER_MAIN_AREA.homeY_coord + PLAYER_MAIN_AREA.playersHomeAreaHeight + "px";
+        // console.log(pasaHTML)
+        (_c = document.getElementById("home_" + playerHomeID)) === null || _c === void 0 ? void 0 : _c.appendChild(pasaHTML);
+        // console.log(JSON.stringify(PASA))
+        ctx.beginPath();
+        ctx.rect(PASA.x_coord, PASA.y_coord, PASA.width, PASA.height);
+        ctx.strokeStyle = "rgba(0, 0, 255, 0.8)";
+        ctx.stroke();
+        ctx.closePath();
     }, []);
     // drawing players home
     ctx.beginPath();
