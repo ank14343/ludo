@@ -8,12 +8,12 @@ module.exports = {
         path: path.resolve(__dirname, "./public")
     },
     resolve: {
-        extensions: [ ".tsx" ]
+        extensions: [ ".tsx", ".ts" ]
     },
     module: {
         rules: [
             {
-                test: /\.tsx$/,
+                test: /\.tsx?$/,
                 use: "ts-loader"
             }
         ]

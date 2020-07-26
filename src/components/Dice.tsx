@@ -1,10 +1,6 @@
 import React from 'react';
 
-interface propsType {
-    
-}
-
-function InsideHome() {
+function Dice() {
     return (
         <div>
             
@@ -12,4 +8,4 @@ function InsideHome() {
     );
 }
 
-export default InsideHome;
+export default Dice;

@@ -145,15 +145,14 @@ function App() {
     ctx.closePath();
     // console.log(ctx)
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement("div", { id: "ludo", style: { width: exports.CANVAS_ATTRIBUTES.WIDTH, height: exports.CANVAS_ATTRIBUTES.HEIGHT, paddingLeft: (window.innerWidth - exports.CANVAS_ATTRIBUTES.WIDTH) / 2 } },
-            react_1.default.createElement(PlayerHome_1.default, { playerHomeID: "box1", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
-            react_1.default.createElement(PlayerHome_1.default, { playerHomeID: "box2", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD + exports.CANVAS_ATTRIBUTES.CHILD_X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
-            react_1.default.createElement(PlayerHome_1.default, { playerHomeID: "box3", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD + exports.CANVAS_ATTRIBUTES.CHILD_X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.Y_COORD + exports.CANVAS_ATTRIBUTES.CHILD_Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
-            react_1.default.createElement(PlayerHome_1.default, { playerHomeID: "box4", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.Y_COORD + exports.CANVAS_ATTRIBUTES.CHILD_Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
-            react_1.default.createElement(HorizontalPath_1.default, { hPathID: "hPath1", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_Y_COORD - exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
-            react_1.default.createElement(HorizontalPath_1.default, { hPathID: "hPath2", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD + exports.CANVAS_ATTRIBUTES.CHILD_X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_Y_COORD - exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
-            react_1.default.createElement(VerticalPath_1.default, { vPathID: "vPath1", x_coord: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, y_coord: exports.CANVAS_ATTRIBUTES.Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_X_COORD - exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
-            react_1.default.createElement(VerticalPath_1.default, { vPathID: "vPath2", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD + exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, y_coord: exports.CANVAS_ATTRIBUTES.CHILD_Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_X_COORD - exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }))));
+        react_1.default.createElement(PlayerHome_1.default, { playerHomeID: "box1", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
+        react_1.default.createElement(PlayerHome_1.default, { playerHomeID: "box2", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD + exports.CANVAS_ATTRIBUTES.CHILD_X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
+        react_1.default.createElement(PlayerHome_1.default, { playerHomeID: "box3", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD + exports.CANVAS_ATTRIBUTES.CHILD_X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.Y_COORD + exports.CANVAS_ATTRIBUTES.CHILD_Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
+        react_1.default.createElement(PlayerHome_1.default, { playerHomeID: "box4", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.Y_COORD + exports.CANVAS_ATTRIBUTES.CHILD_Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
+        react_1.default.createElement(HorizontalPath_1.default, { hPathID: "hPath1", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_Y_COORD - exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
+        react_1.default.createElement(HorizontalPath_1.default, { hPathID: "hPath2", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD + exports.CANVAS_ATTRIBUTES.CHILD_X_COORD, y_coord: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH, width: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_Y_COORD - exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
+        react_1.default.createElement(VerticalPath_1.default, { vPathID: "vPath1", x_coord: exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, y_coord: exports.CANVAS_ATTRIBUTES.Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_X_COORD - exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH }),
+        react_1.default.createElement(VerticalPath_1.default, { vPathID: "vPath2", x_coord: exports.CANVAS_ATTRIBUTES.X_COORD + exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, y_coord: exports.CANVAS_ATTRIBUTES.CHILD_Y_COORD, width: exports.CANVAS_ATTRIBUTES.CHILD_X_COORD - exports.CANVAS_ATTRIBUTES.CHILD_WIDTH, height: exports.CANVAS_ATTRIBUTES.CHILD_HEIGTH })));
 }
 exports.default = App;
 
@@ -184,10 +183,11 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.DICE = exports.PLAYER_MAIN_AREA = void 0;
 var react_1 = __importStar(__webpack_require__(1));
 function PlayerHome(_a) {
     var playerHomeID = _a.playerHomeID, x_coord = _a.x_coord, y_coord = _a.y_coord, width = _a.width, height = _a.height;
-    var PLAYER_MAIN_AREA = {
+    exports.PLAYER_MAIN_AREA = {
         homeX_coord: (width * 1 / 3) / 2,
         homeY_coord: (height * 1 / 3) / 2,
         homeWidth: width * 2 / 3,
@@ -195,68 +195,76 @@ function PlayerHome(_a) {
         playersHomeAreaWidth: (width * 2 / 3) * 5 / 16,
         playersHomeAreaHeight: (height * 2 / 3) * 5 / 16
     };
-    var PASA = {
-        x_coord: x_coord + PLAYER_MAIN_AREA.playersHomeAreaWidth + PLAYER_MAIN_AREA.homeX_coord,
-        y_coord: y_coord + PLAYER_MAIN_AREA.playersHomeAreaHeight + PLAYER_MAIN_AREA.homeY_coord,
-        width: PLAYER_MAIN_AREA.homeWidth - 2 * PLAYER_MAIN_AREA.playersHomeAreaWidth,
-        height: PLAYER_MAIN_AREA.homeHeight - 2 * PLAYER_MAIN_AREA.playersHomeAreaHeight
+    exports.DICE = {
+        x_coord: exports.PLAYER_MAIN_AREA.playersHomeAreaWidth + exports.PLAYER_MAIN_AREA.homeX_coord,
+        y_coord: exports.PLAYER_MAIN_AREA.playersHomeAreaHeight + exports.PLAYER_MAIN_AREA.homeY_coord,
+        width: exports.PLAYER_MAIN_AREA.homeWidth - 2 * exports.PLAYER_MAIN_AREA.playersHomeAreaWidth,
+        height: exports.PLAYER_MAIN_AREA.homeHeight - 2 * exports.PLAYER_MAIN_AREA.playersHomeAreaHeight
     };
     react_1.useEffect(function () {
-        var _a, _b, _c;
         // drawing players main area in home
-        var homeHTML = document.createElement("div");
-        homeHTML.setAttribute("id", "home_" + playerHomeID);
-        homeHTML.style.width = PLAYER_MAIN_AREA.homeWidth + "px";
-        homeHTML.style.height = PLAYER_MAIN_AREA.homeHeight + "px";
-        homeHTML.style.position = "absolute";
-        homeHTML.style.paddingLeft = PLAYER_MAIN_AREA.homeX_coord + "px";
-        homeHTML.style.paddingTop = PLAYER_MAIN_AREA.homeY_coord + "px";
-        // console.log(homeHTML)
-        (_a = document.getElementById(playerHomeID)) === null || _a === void 0 ? void 0 : _a.appendChild(homeHTML);
+        drawingPlayersHomeMainArea();
+        // drawing all four players in home
+        drawingPlayersInHome();
+        // drawing dice area
+        drawingDiceArea();
+    }, []);
+    var drawingDiceArea = function () {
+        // var diceAreaHTML: HTMLElement = document.createElement("div");
+        // diceAreaHTML.setAttribute("id", "dice_" + playerHomeID);
+        // diceAreaHTML.style.width = DICE.width + "px";
+        // diceAreaHTML.style.height = DICE.height + "px";
+        // diceAreaHTML.style.position = "absolute";
+        // diceAreaHTML.style.paddingLeft = PLAYER_MAIN_AREA.playersHomeAreaWidth + "px";
+        // diceAreaHTML.style.paddingTop = PLAYER_MAIN_AREA.playersHomeAreaHeight + "px";
+        // // console.log(diceAreaHTML)
+        // document.getElementById("home_" + playerHomeID)?.appendChild(diceAreaHTML);
+        // // console.log(JSON.stringify(DICE))
         ctx.beginPath();
-        ctx.rect(x_coord + PLAYER_MAIN_AREA.homeX_coord, y_coord + PLAYER_MAIN_AREA.homeY_coord, PLAYER_MAIN_AREA.homeWidth, PLAYER_MAIN_AREA.homeHeight);
-        ctx.strokeStyle = "rgba(0, 255, 0, 0.8)";
+        ctx.rect(x_coord + exports.DICE.x_coord, y_coord + exports.DICE.y_coord, exports.DICE.width, exports.DICE.height);
+        ctx.strokeStyle = "rgba(0, 0, 255, 0.8)";
         ctx.stroke();
         ctx.closePath();
-        // drawing all four players in home
+    };
+    var drawingPlayersInHome = function () {
         // console.log(JSON.stringify(PLAYER_MAIN_AREA))
         var playerNo = 1;
         for (var col = 0; col < 2; col++) {
             for (var row = 0; row < 2; row++) {
-                var playerHomeHTML = document.createElement("div");
-                playerHomeHTML.setAttribute("id", "home_" + playerHomeID + "_player" + playerNo);
-                playerHomeHTML.style.width = PLAYER_MAIN_AREA.playersHomeAreaWidth + "px";
-                playerHomeHTML.style.height = PLAYER_MAIN_AREA.playersHomeAreaHeight + "px";
-                playerHomeHTML.style.position = "absolute";
-                playerHomeHTML.style.paddingLeft = row * (PLAYER_MAIN_AREA.homeWidth - PLAYER_MAIN_AREA.playersHomeAreaWidth) + "px";
-                playerHomeHTML.style.paddingTop = col * (PLAYER_MAIN_AREA.homeHeight - PLAYER_MAIN_AREA.playersHomeAreaHeight) + "px";
-                // console.log(playerHomeHTML)
-                (_b = document.getElementById("home_" + playerHomeID)) === null || _b === void 0 ? void 0 : _b.appendChild(playerHomeHTML);
-                playerNo++;
+                // var playerHomeHTML: HTMLElement = document.createElement("div");
+                // playerHomeHTML.setAttribute("id", "home_" + playerHomeID + "_player" + playerNo);
+                // playerHomeHTML.style.width = PLAYER_MAIN_AREA.playersHomeAreaWidth + "px";
+                // playerHomeHTML.style.height = PLAYER_MAIN_AREA.playersHomeAreaHeight + "px";
+                // playerHomeHTML.style.position = "absolute";
+                // playerHomeHTML.style.paddingLeft = row*(PLAYER_MAIN_AREA.homeWidth - PLAYER_MAIN_AREA.playersHomeAreaWidth) + "px";
+                // playerHomeHTML.style.paddingTop = col*(PLAYER_MAIN_AREA.homeHeight - PLAYER_MAIN_AREA.playersHomeAreaHeight) + "px";
+                // // console.log(playerHomeHTML)
+                // document.getElementById("home_" + playerHomeID)?.appendChild(playerHomeHTML);
+                // playerNo++;
                 ctx.beginPath();
-                ctx.rect(x_coord + PLAYER_MAIN_AREA.homeX_coord + row * (PLAYER_MAIN_AREA.homeWidth - PLAYER_MAIN_AREA.playersHomeAreaWidth), y_coord + PLAYER_MAIN_AREA.homeY_coord + col * (PLAYER_MAIN_AREA.homeHeight - PLAYER_MAIN_AREA.playersHomeAreaHeight), PLAYER_MAIN_AREA.playersHomeAreaWidth, PLAYER_MAIN_AREA.playersHomeAreaHeight);
+                ctx.rect(x_coord + exports.PLAYER_MAIN_AREA.homeX_coord + row * (exports.PLAYER_MAIN_AREA.homeWidth - exports.PLAYER_MAIN_AREA.playersHomeAreaWidth), y_coord + exports.PLAYER_MAIN_AREA.homeY_coord + col * (exports.PLAYER_MAIN_AREA.homeHeight - exports.PLAYER_MAIN_AREA.playersHomeAreaHeight), exports.PLAYER_MAIN_AREA.playersHomeAreaWidth, exports.PLAYER_MAIN_AREA.playersHomeAreaHeight);
                 ctx.strokeStyle = "rgba(0, 0, 0, 0.8)";
                 ctx.stroke();
                 ctx.closePath();
             }
         }
-        // drawing pasa
-        var pasaHTML = document.createElement("div");
-        pasaHTML.setAttribute("id", "pasa_" + playerHomeID);
-        pasaHTML.style.width = PASA.width + "px";
-        pasaHTML.style.height = PASA.height + "px";
-        pasaHTML.style.position = "absolute";
-        pasaHTML.style.paddingLeft = PLAYER_MAIN_AREA.homeX_coord + PLAYER_MAIN_AREA.playersHomeAreaWidth + "px";
-        pasaHTML.style.paddingTop = PLAYER_MAIN_AREA.homeY_coord + PLAYER_MAIN_AREA.playersHomeAreaHeight + "px";
-        // console.log(pasaHTML)
-        (_c = document.getElementById("home_" + playerHomeID)) === null || _c === void 0 ? void 0 : _c.appendChild(pasaHTML);
-        // console.log(JSON.stringify(PASA))
+    };
+    var drawingPlayersHomeMainArea = function () {
+        // var homeHTML: HTMLElement = document.createElement("div");
+        // homeHTML.setAttribute("id", "home_" + playerHomeID);
+        // homeHTML.style.width = PLAYER_MAIN_AREA.homeWidth + "px";
+        // homeHTML.style.height = PLAYER_MAIN_AREA.homeHeight + "px";
+        // homeHTML.style.position = "absolute";
+        // homeHTML.style.paddingLeft = PLAYER_MAIN_AREA.homeX_coord + "px";
+        // homeHTML.style.paddingTop = PLAYER_MAIN_AREA.homeY_coord + "px";
+        // // console.log(homeHTML)
+        // document.getElementById(playerHomeID)?.appendChild(homeHTML);
         ctx.beginPath();
-        ctx.rect(PASA.x_coord, PASA.y_coord, PASA.width, PASA.height);
-        ctx.strokeStyle = "rgba(0, 0, 255, 0.8)";
+        ctx.rect(x_coord + exports.PLAYER_MAIN_AREA.homeX_coord, y_coord + exports.PLAYER_MAIN_AREA.homeY_coord, exports.PLAYER_MAIN_AREA.homeWidth, exports.PLAYER_MAIN_AREA.homeHeight);
+        ctx.strokeStyle = "rgba(0, 255, 0, 0.8)";
         ctx.stroke();
         ctx.closePath();
-    }, []);
+    };
     // drawing players home
     ctx.beginPath();
     ctx.rect(x_coord, y_coord, width, height);
@@ -264,8 +272,7 @@ function PlayerHome(_a) {
     ctx.stroke();
     ctx.closePath();
     // console.log(playerHomeID, x_coord, y_coord, width, height)
-    return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement("div", { id: playerHomeID, style: { width: width, height: height, position: "absolute", paddingLeft: x_coord, paddingTop: y_coord } })));
+    return (react_1.default.createElement(react_1.default.Fragment, null));
 }
 exports.default = PlayerHome;
 
@@ -309,16 +316,16 @@ function HorizontalPath(_a) {
         var _a;
         for (var col = 0; col < 3; col++) {
             for (var row = 0; row < 6; row++) {
-                var box = document.createElement("div");
-                box.setAttribute("id", hPathID + '_box_' + col + '' + row);
-                box.style.width = smallBox.width + "px";
-                box.style.height = smallBox.height + "px";
-                box.style.position = "absolute";
-                box.style.paddingLeft = row * smallBox.width + "px";
-                box.style.paddingTop = col * smallBox.height + "px";
-                box.innerHTML = col + '' + row;
-                boxHTML.appendChild(box);
-                // console.log(x_coord + row*smallBox.width, y_coord + col*smallBox.height, smallBox.width, smallBox.height);
+                // var box: HTMLElement = document.createElement("div");
+                // box.setAttribute("id", hPathID+'_box_'+col +''+ row);
+                // box.style.width = smallBox.width+"px";
+                // box.style.height = smallBox.height+"px";
+                // box.style.position = "absolute";
+                // box.style.paddingLeft = row*smallBox.width+"px";
+                // box.style.paddingTop = col*smallBox.height+"px";
+                // box.innerHTML = col +''+ row;
+                // boxHTML.appendChild(box)
+                // // console.log(x_coord + row*smallBox.width, y_coord + col*smallBox.height, smallBox.width, smallBox.height);
                 ctx.beginPath();
                 ctx.rect(x_coord + row * smallBox.width, y_coord + col * smallBox.height, smallBox.width, smallBox.height);
                 ctx.strokeStyle = 'rgba(' + (50 + col * 30) + ', ' + (50 + row * 30) + ', ' + (50 + row * 30) + ', 1)';
@@ -334,8 +341,7 @@ function HorizontalPath(_a) {
     ctx.stroke();
     ctx.closePath();
     // console.log(hPathID);
-    return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement("div", { id: hPathID, style: { width: width, height: height, position: "absolute", paddingLeft: x_coord, paddingTop: y_coord } })));
+    return (react_1.default.createElement(react_1.default.Fragment, null));
 }
 exports.default = HorizontalPath;
 
@@ -379,16 +385,16 @@ function VerticalPath(_a) {
         var _a;
         for (var col = 0; col < 6; col++) {
             for (var row = 0; row < 3; row++) {
-                var box = document.createElement("div");
-                box.setAttribute("id", vPathID + '_box_' + col + '' + row);
-                box.style.width = smallBox.width + "px";
-                box.style.height = smallBox.height + "px";
-                box.style.position = "absolute";
-                box.style.paddingLeft = row * smallBox.width + "px";
-                box.style.paddingTop = col * smallBox.height + "px";
-                box.innerHTML = col + '' + row;
-                boxHTML.appendChild(box);
-                // console.log(x_coord + row*smallBox.width, y_coord + col*smallBox.height, smallBox.width, smallBox.height);
+                // var box: HTMLElement = document.createElement("div");
+                // box.setAttribute("id", vPathID+'_box_'+col +''+ row);
+                // box.style.width = smallBox.width+"px";
+                // box.style.height = smallBox.height+"px";
+                // box.style.position = "absolute";
+                // box.style.paddingLeft = row*smallBox.width+"px";
+                // box.style.paddingTop = col*smallBox.height+"px";
+                // box.innerHTML = col +''+ row;
+                // boxHTML.appendChild(box)
+                // // console.log(x_coord + row*smallBox.width, y_coord + col*smallBox.height, smallBox.width, smallBox.height);
                 ctx.beginPath();
                 ctx.rect(x_coord + row * smallBox.width, y_coord + col * smallBox.height, smallBox.width, smallBox.height);
                 ctx.strokeStyle = 'rgba(' + (50 + col * 30) + ', ' + (50 + row * 30) + ', ' + (50 + row * 30) + ', 1)';
@@ -404,8 +410,7 @@ function VerticalPath(_a) {
     ctx.stroke();
     ctx.closePath();
     // console.log(vPathID);
-    return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement("div", { id: vPathID, style: { width: width, height: height, position: "absolute", paddingLeft: x_coord, paddingTop: y_coord } })));
+    return (react_1.default.createElement(react_1.default.Fragment, null));
 }
 exports.default = VerticalPath;
 
