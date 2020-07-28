@@ -127,6 +127,7 @@ var react_1 = __importDefault(__webpack_require__(1));
 var PlayerHome_1 = __importDefault(__webpack_require__(4));
 var HorizontalPath_1 = __importDefault(__webpack_require__(5));
 var VerticalPath_1 = __importDefault(__webpack_require__(6));
+var map_1 = __webpack_require__(7);
 exports.CANVAS_ATTRIBUTES = {
     X_COORD: 0,
     Y_COORD: 0,
@@ -138,6 +139,7 @@ exports.CANVAS_ATTRIBUTES = {
     CHILD_HEIGTH: (canvas.height) * 2 / 5
 };
 function App() {
+    canvas.onclick = map_1.handleCanvasClicks;
     ctx.beginPath();
     ctx.rect(exports.CANVAS_ATTRIBUTES.X_COORD, exports.CANVAS_ATTRIBUTES.Y_COORD, exports.CANVAS_ATTRIBUTES.WIDTH, exports.CANVAS_ATTRIBUTES.HEIGHT);
     ctx.strokeStyle = "rgba(0, 0, 0, 1)";
@@ -413,6 +415,33 @@ function VerticalPath(_a) {
     return (react_1.default.createElement(react_1.default.Fragment, null));
 }
 exports.default = VerticalPath;
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.handleCanvasClicks = void 0;
+var browserViewableCanvasScreen = {
+    width: (window.innerWidth - canvas.width) / 2,
+    height: Math.ceil((window.innerHeight - canvas.height) / 2)
+};
+window.onresize = function (e) {
+    // console.log(e)
+    canvas.style.paddingTop = (window.innerHeight - canvas.height) / 2 + "px";
+    browserViewableCanvasScreen = {
+        width: Math.ceil((window.innerWidth - canvas.width) / 2),
+        height: Math.ceil((window.innerHeight - canvas.height) / 2)
+    };
+};
+function handleCanvasClicks(event) {
+    // console.log(event)
+    console.log(event.clientX - browserViewableCanvasScreen.width, event.clientY - browserViewableCanvasScreen.height);
+}
+exports.handleCanvasClicks = handleCanvasClicks;
 
 
 /***/ })

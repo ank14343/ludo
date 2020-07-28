@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { hanleDiceClickEvent } from '../scripts/map';
 
 declare var ctx: CanvasRenderingContext2D;
 export var PLAYER_MAIN_AREA: {

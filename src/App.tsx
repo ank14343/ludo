@@ -3,6 +3,7 @@ import PlayerHome from './components/PlayerHome';
 import HorizontalPath from './components/HorizontalPath';
 import VerticalPath from './components/VerticalPath';
 import Dice from './components/Dice';
+import { handleCanvasClicks } from './scripts/map';
 
 declare var ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement;
 export const CANVAS_ATTRIBUTES = {
@@ -17,6 +18,8 @@ export const CANVAS_ATTRIBUTES = {
 }
 
 function App() {
+    canvas.onclick = handleCanvasClicks;
+
     ctx.beginPath();
     ctx.rect(CANVAS_ATTRIBUTES.X_COORD, CANVAS_ATTRIBUTES.Y_COORD, CANVAS_ATTRIBUTES.WIDTH, CANVAS_ATTRIBUTES.HEIGHT);
     ctx.strokeStyle = "rgba(0, 0, 0, 1)";
