@@ -4,6 +4,7 @@ import HorizontalPath from './components/HorizontalPath';
 import VerticalPath from './components/VerticalPath';
 import Dice from './components/Dice';
 import { handleCanvasClicks } from './scripts/map';
+import "./css/index.css";
 
 declare var ctx: CanvasRenderingContext2D, canvas: HTMLCanvasElement;
 export const CANVAS_ATTRIBUTES = {
